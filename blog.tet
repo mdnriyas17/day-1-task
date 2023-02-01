@@ -1,0 +1,39 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+
+
+
+HTTP is a protocol used by the World Wide Web (WWW) to transfer data over the internet.
+It is used to transfer data between a client and a server. Over the years, several versions of the HTTP protocol have been released, with the latest being HTTP2
+The primary difference between HTTP1.1 and HTTP2 is the way data is transferred between the client and the server.
+HTTP1.1, released in 1999, uses a request-response model. When a client requests a resource from a server,
+the server sends a response that includes the requested resource.
+The client then processes the response, and if necessary, requests additional resources. This model works well for simple websites, but as the complexity of websites increases, so does the number of requests required to load a single page.
+This leads to increased latency, which in turn slows down the loading of web pages.
+
+
+
+HTTP2, released in 2015, is designed to address the limitations of HTTP1.1. It uses a binary format, which is more efficient than the text format used by HTTP1.
+HTTP2 also uses a multiplexing model, which allows multiple requests to be sent and received in parallel. 
+This results in a faster and more efficient transfer of data between the client and the server.
+
+Another difference between HTTP1.1 and HTTP2 is the use of headers. In HTTP1.1, headers are sent with each request and response, adding overhead to each transaction. 
+HTTP2 uses header compression, which reduces the size of headers and increases the speed of transfers.
+
+
+HTTP2 also uses server push, which allows the server to push resources to the client without waiting for a request. 
+This can significantly improve the speed of page loads, 
+as the client does not have to wait for each resource to be requested before it can be loaded.In HTTP1.1
+the server can only send a response after receiving a request.
+
+
+One of the biggest limitations of HTTP1.1 is the number of connections that can be established between the client and server. In HTTP1.
+1, a separate connection is required for each resource requested, which can quickly become a bottleneck as the number of requests increases. 
+HTTP2 allows for a single connection to be established between the client and server, 
+which can greatly reduce the number of connections required and improve the speed of transfers.
+
+
+
+Another important difference between HTTP1.1 and HTTP2 is the way the protocol handles encryption. In HTTP1.
+1, encryption is optional and must be implemented separately from the protocol. HTTP2 requires encryption to be used,
+which provides a more secure transfer of data between the client and server.
